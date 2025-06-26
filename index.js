@@ -11,3 +11,8 @@ import axios from "axios"
 axios.get("https://lanciweb.github.io/demo/api/pictures/")
 .then(res => console.log(res.data) )
 .catch(error => console.error(`errore: ${error}`))
+
+// dotenv 
+import 'dotenv/config';
+
+console.log(`Your api key: ${process.env.apiKey}`);
