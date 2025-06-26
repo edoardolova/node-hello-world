@@ -15,4 +15,8 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
 // dotenv 
 import 'dotenv/config';
 
-console.log(`Your api key: ${process.env.apiKey}`);
+console.log(`your api key: ${process.env.apiKey}`);
+
+// terminal phrase
+const userMessage = process.argv[2];
+console.log(chalk.blue(`message: ${userMessage}`));
